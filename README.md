@@ -2,6 +2,8 @@
 
 ## DISCLAIMER: VERY VERY ALPHA!!
 
+no guarantees of stability!
+
 ![screenshot](./screenshot.png)
 
 ```
