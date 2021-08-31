@@ -26,7 +26,7 @@ export default createSchema({
           title: 'Title',
           type: 'string',
           fieldset: 'movie',
-          validation: (rule) => rule.required(),
+          validation: (rule) => rule.required().warning(),
         },
         {
           name: 'overview',

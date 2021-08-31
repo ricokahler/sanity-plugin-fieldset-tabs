@@ -1,5 +1,9 @@
 # sanity-plugin-fieldset-tabs
 
+## DISCLAIMER: VERY VERY ALPHA!!
+
+![screenshot](./screenshot.png)
+
 ```
 yarn add sanity-plugin-fieldset-tabs
 ```
@@ -32,5 +36,3 @@ const mySchema = {
 ```
 
 every field must belong to a fieldset for now.
-
-## DISCLAIMER: VERY ALPHA!!
