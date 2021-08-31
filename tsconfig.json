@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "target": "esnext",
+    "moduleResolution": "node",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "skipLibCheck": true
+  },
+  "include": [
+    "./node_modules/@sanity/base/types/**/*.ts",
+    "./**/*.ts",
+    "./**/*.tsx"
+  ]
+}
