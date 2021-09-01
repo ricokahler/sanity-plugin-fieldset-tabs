@@ -323,7 +323,10 @@ export const FieldsetTabs = forwardRef(
                     </Flex>
                   </Box>
                 }
-                onClick={() => setActiveFieldset(fieldset)}
+                onClick={() => {
+                  setActiveFieldset(fieldset);
+                  restOfProps.onFocus([fieldset.fields[0].name]);
+                }}
                 selected={activeFieldset === fieldset}
               />
             );
