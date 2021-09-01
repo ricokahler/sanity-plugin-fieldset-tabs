@@ -75,6 +75,27 @@ export default createSchema({
           fieldset: 'person',
         },
         {
+          inputComponent: FieldsetTabs,
+          name: 'exampleObjectWithNestedTabs',
+          description: 'Hey look, nested tabs!',
+          type: 'object',
+          fields: [
+            {
+              name: 'foo',
+              type: 'string',
+              fieldset: 'hey',
+            },
+            {
+              name: 'bar',
+              type: 'number',
+              fieldset: 'there',
+            },
+          ],
+          fieldsets: [{ name: 'hey' }, { name: 'there' }],
+          fieldset: 'person',
+          validation: (rule) => rule.required().custom(() => 'hey there'),
+        },
+        {
           name: 'exampleObj',
           type: 'object',
           fields: [
@@ -90,7 +111,7 @@ export default createSchema({
             },
           ],
           fieldset: 'person',
-          validation: rule => rule.required().custom(() => 'hey there'),
+          validation: (rule) => rule.required().custom(() => 'hey there'),
         },
       ],
     },
